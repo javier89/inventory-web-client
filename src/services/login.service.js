@@ -7,7 +7,6 @@ export async function loginUsuario({usuario, password }){
                 token
                 usuario{
                     id_usuario
-                    usuario
                     nombre
                     activo
                     rol{

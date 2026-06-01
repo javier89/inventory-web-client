@@ -13,7 +13,7 @@ export function useLogin(){
             document.cookie=`token=${data.token}; path=/;`
             localStorage.setItem("usuario", JSON.stringify(data.usuario));
 
-            router.push("/productos");
+            router.push("/dashboard");
         },
     });
 

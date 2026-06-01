@@ -53,7 +53,9 @@ export default function LoginPage() {
           </div>
 
           {error && (
-            <p className="mb-4 text-sm text-red-400">{error.message}</p>
+            <p className="mb-4 text-sm text-red-400">
+              Usuario o Contraseña Incorrectos
+            </p>
           )}
           <button
             type="submit"

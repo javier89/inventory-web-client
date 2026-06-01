@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
 
-export function middleware(request){
+export function proxy(request){
     
       //===============
      // Obtener token 
@@ -19,7 +19,8 @@ export function middleware(request){
    //===============
 
    const protectedRoutes = [
-    "/productos",
+     "/productos",
+     "/dashboard",
    ];
    
      //===============
@@ -51,5 +52,6 @@ export function middleware(request){
 export const config={
   matcher:[
     "/productos/:path*",
-  ]
-}
+    "/dashboard/:path*",
+  ],
+};
