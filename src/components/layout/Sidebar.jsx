@@ -1,7 +1,13 @@
 "use client";
 
 import Link from "next/link";
-import { LayoutDashboard, Package, LogOut } from "lucide-react";
+import {
+  LayoutDashboard,
+  Package,
+  LogOut,
+  ArrowUpRight,
+  ClipboardList,
+} from "lucide-react";
 import { useLogout } from "@/hooks/useLogout";
 
 export default function Sidebar() {
@@ -20,18 +26,39 @@ export default function Sidebar() {
             Dashboard
           </Link>
           <Link
-            href="productos"
+            href="/productos"
             className="flex items-center gap-3 py-3 rounded-xl hover:bg-[#111A3A]"
           >
             <Package size={18} />
             Productos
+          </Link>
+          <Link
+            href="/empleados"
+            className="flex items-center gap-3 py-3 rounded-xl hover:bg-[#111A3A]"
+          >
+            <Package size={18} />
+            Empleados
+          </Link>
+          <Link
+            href="/salidas"
+            className="flex items-center gap-3 py-3 rounded-xl hover:bg-[#111A3A]"
+          >
+            <ArrowUpRight size={18} />
+            Salidas
+          </Link>
+          <Link
+            href="/asignaciones"
+            className="flex item-center gap-3 px-3 rounded-xl hover:bg-[#111A3A]"
+          >
+            <ClipboardList size={18} />
+            Asignaciones
           </Link>
           <button
             onClick={logout}
             className="w-full flex items-center gap-3 px-4 py-3 rounded-xl text-red-400 hover:bg-red-500/10"
           >
             <LogOut size={18} />
-            Salir
+            Cerrar sesión
           </button>
         </nav>
       </aside>

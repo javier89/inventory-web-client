@@ -19,8 +19,11 @@ export function proxy(request){
    //===============
 
    const protectedRoutes = [
+    "/asignaciones", 
+    "/dashboard",
+     "/empleados",
      "/productos",
-     "/dashboard",
+     "/salidas",
    ];
    
      //===============
@@ -51,7 +54,10 @@ export function proxy(request){
 
 export const config={
   matcher:[
-    "/productos/:path*",
+    "/asignaciones/:path*",
     "/dashboard/:path*",
+    "/empleados/:path*",
+    "/productos/:path*",
+    "/salidas/:path*",
   ],
 };
