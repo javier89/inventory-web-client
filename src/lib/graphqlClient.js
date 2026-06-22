@@ -78,10 +78,13 @@ export async function graphqlRequest(
         return json.data;
 
     } catch (error){
-        console.error(
-            "GraphQl Client Error:",
-            error
-        );
+        if(process.env.NODE_ENV==="development"){
+            console.warn(
+                "GraphQl Validation:",
+                error.message
+            );
+        }
+        
         throw error;
     }
 }
