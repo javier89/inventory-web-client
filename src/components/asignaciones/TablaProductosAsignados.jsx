@@ -28,7 +28,7 @@ export default function TablaProductosAsignados({ productos = [] }) {
                 key={producto.id_producto}
                 clasName="hover:bg-[#111A3A] transition"
               >
-                <td clasName="px-6 py-4">{producto.id_producto}</td>
+                <td className="px-6 py-4">{producto.id_producto}</td>
                 <td className="px-6 py-4 font-medium">{producto.nombre}</td>
                 <td className="py-4 px-6 text-center font-semibold">
                   {producto.cantidad_total}

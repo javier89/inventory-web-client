@@ -9,6 +9,7 @@ import {
   ClipboardList,
 } from "lucide-react";
 import { useLogout } from "@/hooks/useLogout";
+import { ArrowRight } from "lucide-react";
 
 export default function Sidebar() {
   const { logout } = useLogout();
@@ -45,6 +46,13 @@ export default function Sidebar() {
           >
             <ArrowUpRight size={18} />
             Salidas
+          </Link>
+          <Link
+            href="/entradas"
+            className="flex items-center gap-3 rounded-xl hover:bg-[#111A3A]"
+          >
+            <ArrowRight size={18} />
+            Entradas
           </Link>
           <Link
             href="/asignaciones"
