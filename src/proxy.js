@@ -25,6 +25,7 @@ export function proxy(request){
      "/entradas",
      "/productos",
      "/salidas",
+     "/permisos"
    ];
    
      //===============
@@ -61,5 +62,6 @@ export const config={
     "/entradas/:path*",
     "/productos/:path*",
     "/salidas/:path*",
+    "/permisos/:path*",
   ],
 };

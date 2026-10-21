@@ -10,6 +10,8 @@ import {
 } from "lucide-react";
 import { useLogout } from "@/hooks/useLogout";
 import { ArrowRight } from "lucide-react";
+import { ShieldCheck } from "lucide-react";
+import { LockKeyhole } from "lucide-react";
 
 export default function Sidebar() {
   const { logout } = useLogout();
@@ -21,7 +23,7 @@ export default function Sidebar() {
         <nav className="space-y-2">
           <Link
             href="/dashboard"
-            className="flex items-center gap-3 px-3 rounded-xl hover:bg-[#111A3A]"
+            className="flex items-center gap-3 py-3 rounded-xl hover:bg-[#111A3A]"
           >
             <LayoutDashboard size={18} />
             Dashboard
@@ -56,14 +58,21 @@ export default function Sidebar() {
           </Link>
           <Link
             href="/asignaciones"
-            className="flex item-center gap-3 px-3 rounded-xl hover:bg-[#111A3A]"
+            className="flex item-center gap-3 py-3 rounded-xl hover:bg-[#111A3A]"
           >
             <ClipboardList size={18} />
             Asignaciones
           </Link>
+          <Link
+            href="/permisos"
+            className="flex item-center gap-3 py-3 rounded-xl hover:bg-[#111A3A]"
+          >
+            <LockKeyhole size={18} />
+            Permisos
+          </Link>
           <button
             onClick={logout}
-            className="w-full flex items-center gap-3 px-4 py-3 rounded-xl text-red-400 hover:bg-red-500/10"
+            className="w-full flex items-center gap-3 py-3 rounded-xl text-red-400 hover:bg-red-500/10"
           >
             <LogOut size={18} />
             Cerrar sesión
