@@ -21,12 +21,12 @@ export default function DashboardPage() {
             <h2 className="text-3xl font-bold mt-2">24</h2>
           </div>
         </div>
-        <div className="w-full h-90 relative flex justify-center items-center">
+        <div className="w-full h-90 relative flex justify-center items-center translate-y-50">
           <Image
-            src="/images/logo.png"
+            src="/images/logoActualizar.png"
             alt="logo"
-            width={620}
-            height={920}
+            width={1200}
+            height={1080}
             className="object-contain object-center p-4"
           />
         </div>
