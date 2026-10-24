@@ -9,9 +9,11 @@ import {
   ClipboardList,
 } from "lucide-react";
 import { useLogout } from "@/hooks/useLogout";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight } from "lucide-react
 import { ShieldCheck } from "lucide-react";
 import { LockKeyhole } from "lucide-react";
+
+
 
 export default function Sidebar() {
   const { logout } = useLogout();
